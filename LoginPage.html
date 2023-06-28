@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+             background-color: rgb(231, 164, 88);
+             background-image: url(images/Itcourse.jpg);
+          }
+          .container{
+            background-color: white;
+            padding: 1em 1em 1em 1em;
+            width: 45%;
+            margin: 100px;
+            margin-top: 100px;
+            border-radius: 1em;
+
+          }
+          .register-btn{
+            background-color: rgb(46, 126, 126);
+            color: black;
+            padding: 1em;
+            cursor: pointer;
+            border-radius: 1em;
+            border-color: none;
+            width: 100%;
+
+          }
+          .register-btn:hover{
+            background-color: aqua;
+          }
+          input,select,textarea{
+            border-radius: 1em;
+            border-color: none;
+            width: 100%;
+            padding: 1em;
+            border: 1px solid black ;
+            margin-top: .5em;
+            margin-bottom: 1em;
+            box-sizing: border-box;
+            color: white;
+
+          }
+          input{
+            background-color: brown;
+            
+            
+              
+          }
+          select{
+            background-color: rgb(16, 69, 116);
+          }
+          textarea{
+            background-color: rgb(117, 71, 11);
+          }
+          h1,h2{
+            font-family: 'Times New Roman', Times, serif;
+             width: 100%;
+             color: antiquewhite;
+             font-weight: 300;
+             text-align: center;
+
+        }
+
+    </style>
+    <body>
+        <h1>Online course</h1>
+        <H3>For the process of using online services please register below</H3>
+        <div class="container">
+        <form>
+            <h2><solid>Registration form</solid> </h2>
+            <p>Please fill in your details and sign up</p>
+            <label>FirstName:*</label>
+            <input 
+              type="text" 
+              placeholder="Enter your name" 
+              id="fn" name="firstName" 
+              required />
+              <label>lastName:*</label>
+            <input 
+              type="text"
+              placeholder="enter lastName"
+              id="ln"
+              name="lastName"
+              required />
+              <label>email:*</label>
+              <input
+              type="text"
+              placeholder="enter valid email"
+              id="em"
+              name="email"
+              required/>
+            <label>course</label>
+             <select id="course" name="course">
+                <option value="1">Java</option>
+                <option value="2">.Net</option>
+                <option value="3">c#</option>
+             </select>
+             <label>Description</label>
+             <textarea id="desc" name="desc" placeholder="Tell us about your experience...">
+
+             </textarea>
+             <button type="submit" class="register-btn">Register</button>
+            <hr/>
+        </form>
+        </div>
+    </body>
+</head>
+</html>
